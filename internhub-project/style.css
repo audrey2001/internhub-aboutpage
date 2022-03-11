@@ -1,0 +1,206 @@
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.about-section{
+    height: 600px;
+    
+    background:linear-gradient(rgba(255,215,0,.5), rgba(0,0,0,.9)), url("/images/pexels-andrea-piacquadio-3769021.jpg");
+
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-size:cover;
+    object-fit: contain;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-section_p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 240px;
+    height: auto;
+    background-attachment: fixed;
+}
+
+
+.button_1{
+    margin-top: 9px;
+
+    border: 2px solid #fcaf21 ;
+    color: honeydew;
+    border-radius: 30px!important;
+    width: 220px;
+    padding: 10px;
+    background-color:rgba(255,215,0,.8) ;
+    
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab div {
+  background-color: white;
+  display: inline;
+  border: 1px solid #f1f1f1;;
+  outline: none;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 5px 6px;
+  transition: 0.3s;
+  width: 140px;
+  text-align: center;
+  color:black;
+  font-weight: bolder;
+}
+
+/* Change background color of buttons on hover */
+.tab div:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab div.active {
+  background-color: gold;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 12px 12px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  background-color: #f1f1f1;
+  height: 150px;
+}
+
+@media screen and(max-width:600px){
+  .tabcontent{
+    height: auto;
+    
+    overflow: hidden;
+  }
+}
+
+
+  /*third part*/
+  
+  
+  
+  .bg-img {
+    /* The image used */
+     
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.9)), url("/images/pexels-andrea-piacquadio-3768894.jpg");
+  
+    /* Control the height of the image */
+    min-height: 580px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Add styles to the form container */
+  form.container {
+    position: absolute;
+    border: 1px solid gold;
+    
+    background-color: gold;
+    max-width: 600px;
+    height: 580px;
+    padding: 16px;
+  }
+  ::placeholder{
+    color: white;
+    font-size: 16px;
+  }
+  .form_input{
+    margin-top: 40px;
+  }
+  
+  /* Full-width input fields */
+    input[type=text], input[type=email] {
+      border-radius: 5px;
+      
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: transparent;
+    outline: none;
+    
+  }
+  
+  
+  /* Set a style for the submit button */
+  .btn_login {
+    background-color:#000000 ;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    width: 27%;
+    
+  }
+  
+  .btn_login:hover {
+    opacity: 1;
+  }
+@media screen and (max-width:440px){
+.tab {
+  flex-direction: column;
+}
+.tab div {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.tabcontent{
+  margin:20px 0px;
+  height: auto;
+}
+
+.col-lg-5{
+  padding: 20px;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  content: '';
+  opacity: .8;
+  background: gold;
+}
+form.container{
+  background: transparent;
+}
+}
